@@ -1,0 +1,11 @@
+*.exe
+*.o
+*.swp
+*~
+*.obj
+*~
+./exeFile/
+test/
+*.bak
+./Debug/*
+./*/Debug/*

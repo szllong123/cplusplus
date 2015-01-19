@@ -277,7 +277,7 @@ int del_zero_memory(processes *pro, int pro_num)
 	int left_num = pro_num;
 	for(int i = 0; i < left_num - 1; ++i){
 		if(pro[i].memory == -1){
-			memcpy(pro, (pro + 1), (left_num - 1) * sizeof(processes));
+			memcpy(pro, (pro + 1), (left_num - 1 -  i) * sizeof(processes));
 			--left_num;
 			--i;
 		}
